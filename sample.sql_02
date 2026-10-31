@@ -1,0 +1,21 @@
+create database Hotel;
+
+use Hotel;
+
+create table foods (
+item_id int primary key,
+item_name varchar(20),
+price float default 10
+);
+
+insert into foods values
+(100,"idli",140),(102,"pongal",200),
+(103,"chicken briyani",300),(104,null,null),
+(105,"mutton briyani",450),(106,"prawn briyani",430),
+(107,null,null),(108,"fish fry",null);
+
+select * from foods;
+
+select * from foods
+where price > 100 and price < 500;
+
